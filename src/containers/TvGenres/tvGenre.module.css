@@ -1,0 +1,32 @@
+.Container {
+  width: 90%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 5rem;
+  padding-right: 3rem;
+  margin-bottom: 5rem;
+}
+.Loading {
+  width: 90%;
+  height: 100vh;
+}
+.Link {
+  list-style-type: none;
+  text-decoration: none;
+}
+@media only screen and (max-width:850px){
+  .Container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Container {
+    grid-template-columns: 1fr;
+  }
+  .Title {
+    font-size: 1.6rem;
+  }
+}
+

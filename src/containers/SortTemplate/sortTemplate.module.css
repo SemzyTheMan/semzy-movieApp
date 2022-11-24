@@ -1,0 +1,85 @@
+.Container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+.Wrap {
+  width: 90%;
+  margin-left: auto;
+}
+.Main {
+  text-align: left;
+  margin-bottom: 3rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.Spinner {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 40vw;
+  transform: translateX(-50%);
+  background-color: #0a0d16;
+}
+.Pagination {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.Pagination > * {
+  padding: 1.5rem 3.5rem;
+  border: 4px solid white;
+  text-align: center;
+}
+.Page {
+  background-color: white;
+  color: hsl(223 30% 9%);
+}
+.Prev {
+  border-radius: 2rem 0 0 2rem;
+  opacity: 0.35;
+  cursor: pointer;
+}
+.PrevActive {
+  border-radius: 2rem 0 0 2rem;
+  opacity: 1;
+  cursor: pointer;
+}
+.Next {
+  border-radius: 0 2rem 2rem 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .Container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .Main {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .Pagination > * {
+    padding: 0.7rem 1rem;
+  }
+  .Wrap {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+  }
+  .Pagination {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,117 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 85%;
+  margin-left: auto;
+  text-align: left;
+}
+.Spinner {
+  width: 90%;
+  height: 100vh;
+  background-color: #0a0d16;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-weight: 500;
+  font-size: 4rem;
+}
+.tagline {
+  font-size: 1.5rem;
+  color: rgb(134, 131, 131);
+}
+.rightsection {
+  width: 70%;
+  padding: 3rem;
+  margin-left: 5rem;
+}
+.rightsection > * {
+  margin-bottom: 1rem;
+}
+.Img {
+  width: 40%;
+  height: 70rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  margin-right: auto;
+}
+.span {
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin-right: 1rem;
+}
+.Rating {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.Detail {
+  width: 80%;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.Detail > div > * {
+  padding: 1rem 0;
+}
+.Detail > div > :first-child {
+  color: rgb(134, 131, 131);
+}
+.genretext {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.genres {
+  display: inline;
+}
+.genres > * {
+  margin-right: 1.5rem;
+}
+.overview {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.synopsis {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.cast {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.Wrap {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 425px) {
+  .Container {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+  .Img {
+    width: 96%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .rightsection {
+    width: 100%;
+    padding: 3rem;
+    margin-left: 0;
+  }
+  .Detail {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .title{
+    font-size: 3rem;
+  }
+}

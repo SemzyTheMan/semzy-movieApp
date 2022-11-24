@@ -1,0 +1,14 @@
+.Name {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  display: inline-block;
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+   border-radius: 1rem;
+   font-weight: 500;
+}
+.Container {
+  margin-right: 1rem;
+  display: inline;
+ 
+}

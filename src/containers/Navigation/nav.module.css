@@ -1,0 +1,47 @@
+.Container {
+  width: 8rem;
+  background-color: #171e31;
+  border-radius: 1rem;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+}
+.icons {
+  margin: auto;
+}
+.Wrap {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.Wrap > * {
+  padding: 3rem 0;
+}
+.Fill:hover {
+  fill: #fc4747;
+  cursor: pointer;
+}
+@media only screen and (max-width: 850px) {
+  .Wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .icons {
+    margin: auto;
+    
+  }
+  .Wrap > * {
+    padding: .7rem 0;
+  }
+  .Container {
+    width: 100%;
+    background-color: #171e31;
+    border-radius: 1rem;
+    position: absolute;
+    top: .5rem;
+    left: 0;
+  
+  }
+}

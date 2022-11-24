@@ -1,0 +1,10 @@
+.swiper {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.Dots {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+}

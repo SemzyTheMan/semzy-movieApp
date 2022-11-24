@@ -1,0 +1,47 @@
+.Container {
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0rem;
+  margin-top: 10rem;
+}
+.Container > * {
+  margin-top: 3rem;
+}
+.Container > h1,
+.Container > div > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.Container>h1{
+    font-weight: 700;
+}
+.Container > div > p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.3rem;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 2rem;
+  line-height: 2.7rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.TrendingText {
+  display: flex;
+  align-items: center;
+}
+.TrendingText > * {
+  padding-right: 2rem;
+}
+.movieSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+.swiper {
+  width: 100%;
+  margin-bottom: 3rem;
+}

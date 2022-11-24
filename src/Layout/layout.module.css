@@ -1,0 +1,15 @@
+.Container {
+  background-color: #0a0d16;
+}
+.Credits {
+  font-size: 1.7rem;
+  color: white;
+  margin: 1.5rem 0;
+}
+.Credits>span{
+    color: #5a6a90;
+}
+.TMDB{
+    width: 15rem;
+    margin-bottom: 4rem;
+}
