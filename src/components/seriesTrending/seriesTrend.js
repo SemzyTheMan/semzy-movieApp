@@ -1,12 +1,11 @@
 import React from "react";
-import classes from "./card.module.css";
+import classes from "./seriesTrend.module.css";
 import IconCategoryMovie from "../icons/IconCategoryMovie";
 import { connect } from "react-redux";
 import IconCategoryTv from "../icons/IconCategoryTv";
 import { getId } from "../../containers/store/actions";
 import { Link } from "react-router-dom";
-const Card = (props) => {
-
+const SeriesTrendCard = (props) => {
   return (
     <div
       onClick={() => {
@@ -16,7 +15,7 @@ const Card = (props) => {
       t
     >
       <Link
-        to={"/details"}
+        to={"/series-details"}
         className={classes.Container}
         style={{
           backgroundImage: `url(${props.backgroundImage})`,
@@ -58,4 +57,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Card);
+export default connect(mapStateToProps, mapDispatchToProps)(SeriesTrendCard);

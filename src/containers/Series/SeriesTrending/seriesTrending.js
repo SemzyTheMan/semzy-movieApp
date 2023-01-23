@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./seriesTrending.module.css";
-import Card from "../../../components/Card/card";
+import SeriesTrendCard from "../../../components/seriesTrending/seriesTrend";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -38,7 +38,7 @@ const SeriesTrending = (props) => {
         >
           {trending ? (
             trending.results.map((el) => (
-              <Card
+              <SeriesTrendCard
                 type={"Tv"}
                 tv={true}
                 key={el.id}
@@ -47,7 +47,7 @@ const SeriesTrending = (props) => {
                 backgroundImage={
                   "http://image.tmdb.org/t/p/w500" + el.backdrop_path
                 }
-              ></Card>
+              ></SeriesTrendCard>
             ))
           ) : (
             <div></div>
